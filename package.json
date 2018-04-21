@@ -42,6 +42,6 @@
   },
   "devDependencies": {
     "serviceworker-webpack-plugin": "^1.0.0-alpha02",
-    "webpack-cli": "^2.0.14"
+    "webpack-cli": "^2.0.15"
   }
 }
