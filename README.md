@@ -17,7 +17,7 @@ import LabelEdit from 'vue-label-edit'
 ### Definition
 
 | Props | Description |
-| --------- |:-----:|
+| --------- |:----- |
 | :text | default value for label edit |
 | v-on:text-updated | callback function to capture the value of the input text |
 | placeholder | (optional) placeholder for empty label edit value |
