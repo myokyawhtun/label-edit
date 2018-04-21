@@ -1,6 +1,6 @@
 {
   "name": "vue-label-edit",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Click to show input text box Vue Component ... inspired by Trello",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,22 @@
   "bugs": {
     "url": "https://github.com/myokyawhtun/vue-label-edit/issues"
   },
-  "homepage": "https://github.com/myokyawhtun/vue-label-edit#readme"
+  "homepage": "https://github.com/myokyawhtun/vue-label-edit#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "rimraf": "^2.6.2",
+    "vue": "^2.5.16",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^14.2.2",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.6.0",
+    "webpack-merge": "^4.1.2"
+  }
 }
