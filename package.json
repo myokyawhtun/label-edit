@@ -1,6 +1,6 @@
 {
   "name": "label-edit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Click to show input text box Vue Component ... inspired by Trello",
   "main": "dist/vue-label-edit.js",
   "scripts": {
