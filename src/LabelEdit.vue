@@ -1,7 +1,7 @@
 <template>
 	<div class="vlabeledit">
 		<div class="vlabeledit-label" @click="onLabelClick" v-if="!edit">{{vlabel}}</div>
-		<input type="text" v-if="edit" v-model="label" v-on:blur="updateText" ref="labeledit" :placeholder="vplaceholder" class="vlabeledit-input"/>
+		<input type="text" v-if="edit" v-model="label" v-on:blur="updateText" ref="labeledit" :placeholder="vplaceholder" class="vlabeledit-input" @keyup.enter="updateText"/>
 	</div>
 </template>
 <script>
