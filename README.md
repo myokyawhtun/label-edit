@@ -21,3 +21,10 @@ import LabelEdit from 'vue-label-edit'
 | :text | default value for label edit |
 | v-on:text-updated | callback function to capture the value of the input text |
 | placeholder | (optional) placeholder for empty label edit value |
+
+## Demo
+![Gif Demo][demo]
+
+### References
+
+[demo]: https://media.giphy.com/media/PMUxyTGtLN8csmXxFm/giphy.gif
