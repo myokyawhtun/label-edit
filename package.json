@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/myokyawhtun/vue-label-edit.git"
+    "url": "git+https://github.com/myokyawhtun/label-edit.git"
   },
   "keywords": [
     "vue",
@@ -20,9 +20,9 @@
   "author": "Myo Kyaw Htun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/myokyawhtun/vue-label-edit/issues"
+    "url": "https://github.com/myokyawhtun/label-edit/issues"
   },
-  "homepage": "https://github.com/myokyawhtun/vue-label-edit#readme",
+  "homepage": "https://github.com/myokyawhtun/label-edit#readme",
   "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",

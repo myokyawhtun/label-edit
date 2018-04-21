@@ -1,13 +1,13 @@
-# vue-label-edit
+# label-edit
 Click to show input text box Vue Component ... inspired by Trello. This is my first time publishing Vue Component via npm package and let me know if you encounter any issues, bugs, or improvement. Thanks!
 
 ## Installation
 ```
-npm install --save vue-label-edit
+npm install --save label-edit
 ```
 ### Module
 ```js
-import LabelEdit from 'vue-label-edit'
+import LabelEdit from 'label-edit'
 ```
 ## Usage
 ```html
