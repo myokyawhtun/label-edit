@@ -1,8 +1,8 @@
 {
-  "name": "vue-label-edit",
+  "name": "label-edit",
   "version": "0.0.1",
   "description": "Click to show input text box Vue Component ... inspired by Trello",
-  "main": "index.js",
+  "main": "dist/vue-label-edit.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf ./dist && webpack --config ./webpack.config.js"
