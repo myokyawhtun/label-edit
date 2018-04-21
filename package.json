@@ -1,0 +1,25 @@
+{
+  "name": "vue-label-edit",
+  "version": "1.0.0",
+  "description": "Click to show input text box Vue Component ... inspired by Trello",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myokyawhtun/vue-label-edit.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-components",
+    "vuejs",
+    "vuejs2"
+  ],
+  "author": "Myo Kyaw Htun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myokyawhtun/vue-label-edit/issues"
+  },
+  "homepage": "https://github.com/myokyawhtun/vue-label-edit#readme"
+}
