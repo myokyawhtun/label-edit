@@ -27,9 +27,9 @@ import LabelEdit from 'vue-label-edit'
 ```html
 <template>
 	<div class="hello">
-    <h3>Text Box 1 with default text and place holder</h3>
-    <label-edit :text="text" id="labeledit1" v-on:text-updated="textUpdated" placeholder="Enter some text"></label-edit>
-  </div>
+		<h3>Text Box 1 with default text and place holder</h3>
+		<label-edit :text="text" id="labeledit1" v-on:text-updated="textUpdated" placeholder="Enter some text"></label-edit>
+	</div>
 </template>
 ```
 
