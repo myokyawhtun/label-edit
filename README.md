@@ -19,7 +19,8 @@ import LabelEdit from 'label-edit'
 | Props | Description |
 | --------- |:----- |
 | :text | default value for label edit |
-| v-on:text-updated | callback function to capture the value of the input text |
+| v-on:text-updated-blur | callback function to capture the value changes of the input text when text lost its focus |
+| v-on:text-updated-enter | callback function to capture the value changes of the input text when user pressed enter |
 | placeholder | (optional) placeholder for empty label edit value |
 
 ## Example
