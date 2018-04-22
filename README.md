@@ -11,7 +11,7 @@ import LabelEdit from 'label-edit'
 ```
 ## Usage
 ```html
-<label-edit v-bind:text="text" placeholder="Enter text value" v-on:text-updated="textUpdateCallback"></label-edit>
+<label-edit v-bind:text="text" placeholder="Enter text value" v-on:text-updated-blur="textUpdateCallbackBlur" v-on:text-updated-enter="textUpdateCallbackEnter"></label-edit>
 ```
 
 ### Definition
