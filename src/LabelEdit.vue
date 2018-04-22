@@ -1,7 +1,7 @@
 <template>
 	<div class="vlabeledit">
 		<div class="vlabeledit-label" @click="onLabelClick" v-if="!edit">{{vlabel}}</div>
-		<input type="text" v-if="edit" v-model="label" v-on:blur="updateText" ref="labeledit" :placeholder="vplaceholder" class="vlabeledit-input" @keyup.enter="updateText"/>
+		<input type="text" v-if="edit" v-model="label" v-on:blur="updateTextBlur" ref="labeledit" :placeholder="vplaceholder" class="vlabeledit-input" @keyup.enter="updateTextEnter"/>
 	</div>
 </template>
 <script>
@@ -29,11 +29,15 @@ export default{
 			this.label = this.text;
 		},
 		// trigger when textbox got lost focus
-		updateText: function(){
+		updateTextBlur: function(){
 			// update the edit mode to false .. display div label text
 			this.edit = false;
 			// emit text updated callback
-			this.$emit('text-updated',this.label)
+			this.$emit('text-updated-blur',this.label)
+		},
+		updateTextEnter: function(){
+			this.edit = false;
+			this.$emit('text-updated-enter',this.label)
 		}
 	},
 	computed: {
