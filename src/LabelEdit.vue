@@ -74,6 +74,8 @@ export default{
 		text: function(value){
 			if(value==''||value==undefined){
 				this.label = this.vplaceholder
+			}else{
+			  this.label = value
 			}
 		}
 	}
