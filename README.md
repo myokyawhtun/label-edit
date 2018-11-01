@@ -1,13 +1,17 @@
 # label-edit
-Click to show input text box Vue Component ... inspired by Trello. This is my first time publishing Vue Component via npm package and let me know if you encounter any issues, bugs, or improvement. Thanks!
+Click to show input text box Vue Component ... inspired by Trello. 
+
+Base code by [https://github.com/myokyawhtun/label-edit](https://github.com/myokyawhtun/label-edit)
+
+Pull requests are welcomed on this repo to make this better.
 
 ## Installation
 ```
-npm install --save label-edit
+npm install --save vue-label-edit
 ```
 ### Module
 ```js
-import LabelEdit from 'label-edit'
+import LabelEdit from 'vue-label-edit'
 ```
 ## Usage
 ```html
@@ -22,6 +26,7 @@ import LabelEdit from 'label-edit'
 | v-on:text-updated-blur | callback function to capture the value changes of the input text when text lost its focus |
 | v-on:text-updated-enter | callback function to capture the value changes of the input text when user pressed enter |
 | placeholder | (optional) placeholder for empty label edit value |
+| name | (optional) unique name/identifier for the label when you want to easily track edit value input from many rendered in page |
 
 ## Example
 
@@ -50,6 +55,40 @@ export default {
   methods: {
     textUpdated: function(text){
       this.text = text;
+    },
+  }
+}
+</script>
+```
+
+### Or
+
+```html
+<template>
+	<div class="hello">
+		<h3>Text Box 1 with default text and place holder</h3>
+		<label-edit :text="text" id="labeledit1" v-on:text-updated="textUpdated" placeholder="Enter some text" name="telephone"></label-edit>
+	</div>
+</template>
+```
+
+```js
+<script>
+import LabelEdit from 'label-edit'
+export default {
+  name: 'HelloWorld',
+  data () {
+    return {
+      text: 'Click this text!',
+    }
+  },
+  components: {
+    LabelEdit,
+  },
+  methods: {
+    textUpdated: function(text, name){
+      this.text = text;
+      console.log('Name of LabelEdit updated out of many on the page is : '+name);
     },
   }
 }
