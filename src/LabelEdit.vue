@@ -1,7 +1,16 @@
 <template>
 	<div class="vlabeledit">
 		<div class="vlabeledit-label" @click="onLabelClick" v-if="!edit">{{vlabel}}</div>
-		<input type="text" v-if="edit" v-model="label" v-on:blur="updateTextBlur" ref="labeledit" :placeholder="vplaceholder" class="vlabeledit-input" @keyup.enter="updateTextEnter"/>
+		<input type="text" 
+			v-if="edit" 
+			v-model="label" 
+			v-on:blur="updateTextBlur" 
+			ref="labeledit" 
+			:placeholder="vplaceholder" 
+			class="vlabeledit-input" 
+			@keyup.enter="updateTextEnter"
+			:class="{invalid: !labelValid}"
+		/>
 	</div>
 </template>
 <script>
@@ -13,8 +22,16 @@ export default{
 			label: '', // v-bind data model for input text
 			empty: 'Enter some text value', // empty place holder .. replace with your own localization for default
 		}
+	}, // parent should provide :text or :placeholder
+	props: {
+		text: String,
+		placeholder: String,
+		regex: {
+			type: String,
+			required: true,
+			default: '.*'
+		}
 	},
-	props: ['text','placeholder'], // parent should provide :text or :placeholder
 	methods: {
 		initText: function(){
 			if(this.text==''||this.text==undefined){
@@ -36,8 +53,10 @@ export default{
 			this.$emit('text-updated-blur',this.label)
 		},
 		updateTextEnter: function(){
-			this.edit = false;
-			this.$emit('text-updated-enter',this.label)
+			if (this.labelValid) {
+				this.edit = false;
+				this.$emit('text-updated-enter',this.label)
+			}
 		}
 	},
 	computed: {
@@ -58,6 +77,9 @@ export default{
 			}else{
 				return this.label
 			}
+		},
+		labelValid: function(){
+			return this.label.match(new RegExp(this.regex))
 		}
 	},
 	mounted: function(){
@@ -79,3 +101,10 @@ export default{
 	}
 }
 </script>
+
+<style scoped>
+.invalid {
+	border: solid 1px red;
+	background-color: pink;
+}
+</style>
