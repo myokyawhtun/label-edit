@@ -29,7 +29,7 @@ import LabelEdit from 'label-edit'
 <template>
 	<div class="hello">
 		<h3>Text Box 1 with default text and place holder</h3>
-		<label-edit :text="text" id="labeledit1" v-on:text-updated="textUpdated" placeholder="Enter some text"></label-edit>
+		<label-edit :text="text" id="labeledit1" v-on:text-updated-enter="textUpdated" placeholder="Enter some text"></label-edit>
 	</div>
 </template>
 ```
