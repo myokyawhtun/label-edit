@@ -28,7 +28,7 @@ export default{
 		placeholder: String,
 		regex: {
 			type: String,
-			required: true,
+			required: false,
 			default: '.*'
 		}
 	},
