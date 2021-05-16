@@ -11,7 +11,7 @@ import LabelEdit from 'label-edit'
 ```
 ## Usage
 ```html
-<label-edit v-bind:text="text" placeholder="Enter text value" v-on:text-updated-blur="textUpdateCallbackBlur" v-on:text-updated-enter="textUpdateCallbackEnter"></label-edit>
+<label-edit :text="text" id="labeledit1" v-on:text-updated="textUpdated" placeholder="Enter some text" v-on:text-updated-blur="textUpdated" v-on:text-updated-enter="textUpdated"></label-edit>
 ```
 
 ### Definition
@@ -29,7 +29,7 @@ import LabelEdit from 'label-edit'
 <template>
 	<div class="hello">
 		<h3>Text Box 1 with default text and place holder</h3>
-		<label-edit :text="text" id="labeledit1" v-on:text-updated-enter="textUpdated" placeholder="Enter some text"></label-edit>
+		<label-edit :text="text" id="labeledit1" v-on:text-updated="textUpdated" placeholder="Enter some text" v-on:text-updated-blur="textUpdated" v-on:text-updated-enter="textUpdated"></label-edit>
 	</div>
 </template>
 ```
