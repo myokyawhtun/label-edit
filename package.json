@@ -37,11 +37,11 @@
     "vue-loader": "^14.2.2",
     "vue-style-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.6.0",
     "webpack-merge": "^4.1.2"
   },
   "devDependencies": {
     "serviceworker-webpack-plugin": "^1.0.0-alpha02",
-    "webpack-cli": "^2.0.15"
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
   }
 }
